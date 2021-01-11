@@ -1,0 +1,18 @@
+项目描述
+该项目的架构搭建使用的是maven，后台是使用的是spring boot框架，数据库的CRUD使用的是注解的方式，权限管理使用的是shiro框架，前端使用的框架是jquery、bootstrap、easyui、highcharts4
+
+功能
+用户管理、角色管理、日志管理、供应商管理、客户管理、商品管理、库存管理、进货/退货管理、商品报损，报溢管理、商品采购，销售统计、商品销售按日分析统计。
+
+运行环境
+jdk8+tomcat8+mysql+Eclipse+maven
+
+项目技术
+Spring boot+spring data jpa+apache shiro+bootstrap+jquery+highcharts4
+
+启动步骤：
+1.将db_jxc.sql建表语句导入mysql数据库（mysql版本不要超过6）
+2.将项目源码导入到eclipse开发工具中（本项目为maven项目需要maven环境）
+3.配置JXC/src/main/resources/application.yml配置文件的9-11行，修改数据库连接地址
+4.启动springboot项目，run as 启动JXC/src/main/java/com/java1234/JxcApplication.java文件
+5.浏览器访问地址  localhost  账户 admin  密码 1
